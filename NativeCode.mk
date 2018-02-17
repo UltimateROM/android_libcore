@@ -118,7 +118,7 @@ LOCAL_MODULE_TAGS := debug
 LOCAL_MODULE := libjavacore-unit-tests
 LOCAL_ADDITIONAL_DEPENDENCIES := $(LOCAL_PATH)/NativeCode.mk
 LOCAL_CXX_STL := libc++
-include $(BUILD_NATIVE_TEST)
+#include $(BUILD_NATIVE_TEST)
 
 # Set of benchmarks for libjavacore functions.
 include $(CLEAR_VARS)
@@ -135,7 +135,7 @@ LOCAL_CXX_STL := libc++
 LOCAL_MULTILIB := both
 LOCAL_MODULE_STEM_32 := $(LOCAL_MODULE)32
 LOCAL_MODULE_STEM_64 := $(LOCAL_MODULE)64
-include $(BUILD_NATIVE_BENCHMARK)
+#include $(BUILD_NATIVE_BENCHMARK)
 
 
 #
